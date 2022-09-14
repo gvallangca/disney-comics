@@ -66,3 +66,9 @@ At the database persistence, I prefered to use JPA  because it's quick and easy 
     "series_title" : ["ALL"]<br>&emsp;&emsp;
     }
 7. Hit the <b>Send Request</b> button and observe the result. You can play the variable values in step 6.
+
+# Areas for improvement
+1. Add a mutation which can create a comic series.
+2. Secure mutation queries exclusive for admin users
+3. Unfortunately I'm not able to make the JUnit work. I would need to make some additional research about this.
+4. If I wanted to deploy this in PROD, I will deploy this in a commercial cloud like AWS. Will apply load balancing and auto-scale mechanism to make it highly available and resilient. I would prefer to deploy it in a containerized environment such as ECS Fargate because it's less maintenance compared to server-type(such as EC2) deployment.
