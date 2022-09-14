@@ -71,4 +71,7 @@ At the database persistence, I prefered to use JPA  because it's quick and easy 
 1. Add a mutation which can create or update a comic series, authors and character heroes.
 2. Secure mutation queries exclusive for admin users
 3. Unfortunately I'm not able to make the JUnit work. I would need to make some additional research about this.
-4. If I wanted to deploy this in PROD, I will deploy this in a commercial cloud like AWS. Will apply load balancing and auto-scale mechanism to make it highly available and resilient. I would prefer to deploy it in a containerized environment such as ECS Fargate because it's less maintenance compared to server-type(such as EC2) deployment.
+4. If I wanted to deploy this in PROD, I will deploy this in a commercial cloud like AWS. Will apply load balancing and auto-scale mechanism to make it highly available and resilient. <br>
+I would prefer to deploy it in a containerized environment such as ECS Fargate because it's less maintenance compared to server-type(such as EC2) deployment.<br>
+For data at rest such as database, the whole dtaabase should be encrypted. Even if the database is already encrypted, make sure confidential data such as passwords are encrypted in the row level.<br>
+Alternatively for confidential values such as resource passwords or keys, it's highly recommended to store and retrieve them from a vault(e.g.: AWS Secrets Manager)
