@@ -2,11 +2,10 @@
 An API written in GraphQL in Spring Boot which returns a list of comic books.
 
 # Overview
-I had chose to use GraphQL in this use case because of the flexibility to filter the requested attributes.
-It also helps me to develop less endpoints. With the use of GraphQL Query, it makes the development quite
-imperative compared to Spring MVC.
-At the database persistence, I prefered to use JPA  because it's quick and easy to use but if in case I
-would need a more granular requirement, I may opt choose native JDBC or Spring JDBC.
+I chose to use GraphQL in this use case because of the flexibility to filter the requested attributes which are only necessary for the client. Unlike REST, it has fixed response. It can over or under fetch attributes.
+GraphQL also helped me to develop less endpoints. Unlike in REST, I may need to create different endpoints for different filter requirements or I may create plenty of nested conditional statements. 
+With the use of GraphQL Query, it makes the development quite imperative compared to Spring MVC, it would take you.
+At the database persistence, I prefered to use JPA  because it's quick and easy to use but if in case I would need a more granular requirement, I may opt choose native JDBC or Spring JDBC.
 
 # Pre-requisites
 1. <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">JDK 11</a>
