@@ -1,6 +1,13 @@
 # Title: disney-comics
 An API written in GraphQL in Spring Boot which returns a list of comic books.
 
+# Overview
+I had chose to use GraphQL in this use case because of the flexibility to filter the requested attributes.
+It also helps me to develop less endpoints. With the use of GraphQL Query, it makes the development quite
+imperative compared to Spring MVC.
+At the database persistence, I prefered to use JPA  because it's quick and easy to use but if in case I
+would need a more granular requirement, I may opt choose native JDBC or Spring JDBC.
+
 # Pre-requisites
 1. <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">JDK 11</a>
 2. <a href="https://dev.mysql.com/downloads/installer/">MySQL</a>
@@ -52,7 +59,7 @@ An API written in GraphQL in Spring Boot which returns a list of comic books.
 			}<br>&emsp;&emsp;&emsp;&emsp;
 		}<br>&emsp;&emsp;&emsp;
 	}
-6. At the bottom right, click <b>Variables</b> and paste the given values below.
+6. At the bottom left, click <b>Variables</b> and paste the given values below.
   ![image](https://user-images.githubusercontent.com/13655665/190054576-356e25fb-63c2-4d0d-8427-981adb6d8d11.png)<br>&emsp;&emsp;
     {<br>&emsp;&emsp;&emsp;
     "creator_id" : 1,<br>&emsp;&emsp;&emsp;
