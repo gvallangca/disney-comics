@@ -20,7 +20,7 @@ At the database persistence, I prefered to use JPA  because it's quick and easy 
 1. Execute clone command in git bash: 
       **git clone https://github.com/gvallangca/disney-comics.git**
 2. Open **disney-comics/disney_db_dump.sql** and execute this in MySQL Workbench to create the database and load the records. 
-  Alternatively, you can the mysql cmd client and execute this command:<br>&emsp;&emsp;
+  Alternatively, you can try the mysql cmd client and execute this command:<br>&emsp;&emsp;
   <b>mysql -u <user> <new_database> < disney_db_dump.sql</b>
 3. In your current git bash, execute maven command:
       <b>mvn clean package</b>
