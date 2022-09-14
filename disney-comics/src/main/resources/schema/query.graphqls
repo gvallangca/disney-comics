@@ -1,0 +1,19 @@
+type Query {	
+	creator(id : Long) : CreatorResponse
+}
+
+type CreatorResponse {
+	id : Int
+	name : String
+	heroes(heroFilterNames : [String]) : [HeroResponse]
+}
+
+type HeroResponse {
+	id : Int
+	name : String
+	seriesList(seriesFilterTitles : [String]) : [SeriesResponse]
+}
+
+type SeriesResponse {
+	title : String
+}
