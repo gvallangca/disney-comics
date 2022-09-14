@@ -1,19 +1,34 @@
 type Query {	
+	# Retrieve the author with its list of characters and its respective series
 	creator(id : Long) : CreatorResponse
 }
 
+# This is the author
 type CreatorResponse {
+	# The unique ID of the author
 	id : Int
+	
+	# The given name of the author
 	name : String
+	
+	# The list of characters of his comics
 	heroes(heroFilterNames : [String]) : [HeroResponse]
 }
 
+# This is the main character of the comic
 type HeroResponse {
+	# The unique ID of the character
 	id : Int
+	
+	# The name of the character hero
 	name : String
+	
+	# The list of comic series this character hero has
 	seriesList(seriesFilterTitles : [String]) : [SeriesResponse]
 }
 
+# This is the series name of the comic
 type SeriesResponse {
+	# The series title
 	title : String
 }
